@@ -1,6 +1,6 @@
 import React from "react"
 
-export default function Header() {
+export default function Header({opnCategories}) {
     return(
         <div className="header">
             <div className="logo">
@@ -8,7 +8,7 @@ export default function Header() {
             </div>
             <div className="nav">
                 <img width={22} height={22} src="./img/search.svg" alt="" />
-                <img width={22} height={22} src="./img/open-drawer.svg" alt="" />
+                <img onClick={opnCategories} width={22} height={22} src="./img/open-drawer.svg" alt="" />
             </div>
         </div>
     )
