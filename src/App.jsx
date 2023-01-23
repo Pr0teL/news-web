@@ -25,7 +25,7 @@ function App() {
      }).finally(()=> setLoad(false))
 
      setLoad(true)
-       axios.get('https://cdn.cur.su/api/cbr.json').then(res => {
+       axios.get('https://cdn.cur.su/api/cbr.json').then(res => { //Не работает
       
        setVals(res.data);
        console.log(res.data)
